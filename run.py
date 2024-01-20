@@ -5,6 +5,7 @@ from urllib.request import urlopen
 import logging
 import glob
 import os
+from certbot.main import main as certbot_main
 
 
 parser = ArgumentParser()
@@ -48,3 +49,19 @@ server {{
 """)
     logging.info(f'finished processing {item["domain"]}')
 logging.info('done')
+
+certbot_main([
+    '--nginx',
+    '--agree-tos',
+    '--no-eff-email',
+    '--redirect',
+    '--register-unsafely-without-email',
+    '--staging',
+    '--non-interactive',
+    '--expand',
+    '--force-renewal',
+    '--work-dir', '/tmp/work',
+    '--config-dir', '/tmp/config',
+    '--logs-dir', '/tmp/logs',
+]
+)

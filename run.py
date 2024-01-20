@@ -38,7 +38,7 @@ for item in json.loads(urlopen(args.url).read()):
         f.write(f"""
 server {{
     listen 80;
-    server_name {item['domain']};
+    server_name {item['domain']} www.{item['domain']};
     location / {{
         proxy_pass {item['cf']};
     }}

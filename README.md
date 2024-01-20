@@ -1,5 +1,9 @@
 # Nginx Virtualhost Generator & Certbot
 
+## requirements
+
+- python3.6+
+- nginx
 
 # usage
 

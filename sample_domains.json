@@ -1,0 +1,10 @@
+[
+  {"domain": "example1.com", "cf": "https://d2ybrl5eqmw28p.cloudfront.net"},
+  {"domain": "example2.com", "cf": "https://d2ybrl5eqmw28p.cloudfront.net"},
+  {"domain": "example3.com", "cf": "https://d2ybrl5eqmw28p.cloudfront.net"},
+  {"domain": "example4.com", "cf": "https://d2ybrl5eqmw28p.cloudfront.net"},
+  {"domain": "example5.com", "cf": "https://d2ybrl5eqmw28p.cloudfront.net"},
+  {"domain": "example6.com", "cf": "https://d2ybrl5eqmw28p.cloudfront.net"},
+  {"domain": "example7.com", "cf": "https://d2ybrl5eqmw28p.cloudfront.net"},
+  {"domain": "example8.com", "cf": "https://d2ybrl5eqmw28p.cloudfront.net"}
+]

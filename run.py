@@ -3,6 +3,9 @@ import json
 from argparse import ArgumentParser
 from urllib.request import urlopen
 import logging
+import glob
+import os
+
 
 parser = ArgumentParser()
 parser.add_argument("-u", "--url", dest="url", required=True,
@@ -17,6 +20,12 @@ if args.verbose:
     logging.basicConfig(level=logging.INFO)
 else:
     logging.basicConfig(level=logging.ERROR)
+
+logging.info('starting cleanup')
+for f in glob.glob("./nginx/conf.d/*.conf"):
+    os.remove(f)
+logging.info('cleanup done')
+
 
 logging.info(f'fetching url: {args.url}')
 
